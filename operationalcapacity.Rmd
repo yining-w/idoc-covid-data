@@ -20,8 +20,8 @@ off_class <- off_class %>% filter(Month != "Total")
 ```
 
 
-```{r class}
-
+```{r plots}
+#Select Tracked Facilities
 filtered <- off_class %>%
   group_by(Prison) %>% 
   filter(Prison =="East Moline" |
@@ -45,10 +45,7 @@ ggplot() + geom_point(aes(x=Month, y= class_1, group=Prison),
   geom_point(aes(x=Month, y=class_1, color=Prison), 
                      data = filtered)
 
-```
-
-
-```{r by capacity}
+#By Staff Ratio
 operational_capacity <- operational_capacity %>% filter(Facility != "Menard R&C")
 staffratio <- staffratio %>% filter(Month != "Total")
 filtered <- staffratio %>%
