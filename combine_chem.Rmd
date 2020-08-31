@@ -1,5 +1,6 @@
 ---
-title: "Chemical Overtime"
+title: "Combine Chemicals of All Dates"
+author: Yi Ning Wong
 output: html_document
 ---
 
