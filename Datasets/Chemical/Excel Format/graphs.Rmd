@@ -1,5 +1,6 @@
 ---
 title: "equipment_analysis"
+author: Yi Ning Wong
 output: html_document
 ---
 
@@ -33,7 +34,6 @@ chemical$peroxide <- as.numeric(as.character(chemical$peroxide))
 
 chemical <- chemical %>% mutate(cleaners = industrial_cleaner + bleach + arc_cleaner + 
                                   citral_cleaner + peroxide)
-#quick visual for East Moline
 #Group by Prisons we're looking at
 filtered <- chemical %>%
   group_by(facility) %>% 
@@ -66,51 +66,3 @@ ggplot() + geom_point(aes(x=Date, y=citral_cleaner, group=facility), data = chem
 
 
 ```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r filtered for scale}
-#Group by Prisons we're looking at
-chemical_filtered <- chemical %>% filter(soap <= 10000)
-
-#Hand Sanitizer
-ggplot() + geom_point(aes(x=Date, y=hand_sanitizer, group=facility), 
-                     data = chemical_filtered,
-                     color = alpha("grey", 0.7)) +
-  geom_point(aes(x=Date, y=hand_sanitizer, color=facility), 
-                     data = filtered)
-
-# soap
-ggplot() + geom_point(aes(x=Date, y=foaming_soap, group=facility), 
-                     data = chemical,
-                     color = alpha("grey", 0.7)) +
-  geom_point(aes(x=Date, y=foaming_soap, color=facility), 
-                     data = filtered)
-
-#Cleaner
-ggplot() + geom_point(aes(x=Date, y=, group=facility), 
-                     data = chemical,
-                     color =alpha("grey", 0.7)) +
-  geom_point(aes(x=Date, y=cleaners, color=facility), 
-                     data = filtered)
-
-ggplot() + geom_point(aes(x=Date, y=industrial_cleaner, group=facility), 
-                     data = chemical,
-                     color = alpha("grey", 0.7)) +
-  geom_point(aes(x=Date, y=industrial_cleaner, color=facility), 
-                     data = filtered)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
