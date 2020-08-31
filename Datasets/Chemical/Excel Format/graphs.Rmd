@@ -12,26 +12,20 @@ library(tidyverse)
 library(ggplot2)
 chemical <- read_excel("ChemicalEquip_Overtime.xlsx")
 
-#quick cleanup
-#chemical <- chemical %>% rename(bleach = "...5")
-#chemical <- chemical %>% rename(arc_cleaner = "...7")
-#chemical <- chemical %>% rename(peroxide = "...9")
-#chemical <- chemical %>% rename(bacterial_soap = "...11")
-#chemical <- chemical %>% rename(sanitizer_bottle = "...13")
-chemical <- chemical %>% mutate(soap = foaming_soap + anti_bacterial_soap + bar_soap)
+
 #change to numeric
 chemical$date <- as.numeric(as.character(chemical$date))
 chemical$hand_sanitizer <- as.numeric(as.character(chemical$hand_sanitizer))
 chemical$foaming_soap <- as.numeric(as.character(chemical$foaming_soap))
 chemical$anti_bacterial_soap <- as.numeric(as.character(chemical$anti_bacterial_soap))
 chemical$bar_soap <- as.numeric(as.character(chemical$bar_soap))
-
 chemical$industrial_cleaner <- as.numeric(as.character(chemical$industrial_cleaner))
 chemical$bleach <- as.numeric(as.character(chemical$bleach))
 chemical$arc_cleaner <- as.numeric(as.character(chemical$arc_cleaner))
 chemical$citral_cleaner <- as.numeric(as.character(chemical$citral_cleaner))
 chemical$peroxide <- as.numeric(as.character(chemical$peroxide))
 
+#Combine Cleaners
 chemical <- chemical %>% mutate(cleaners = industrial_cleaner + bleach + arc_cleaner + 
                                   citral_cleaner + peroxide)
 #Group by Prisons we're looking at
