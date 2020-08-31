@@ -1,0 +1,83 @@
+---
+title: "Capacity"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+remove(list=ls())
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+off_class <- read_excel("C:/Users/yinin/Desktop/Medical Inventory/quarterly_report/capacity by class.xlsx")
+offensetype <-  read_excel("C:/Users/yinin/Desktop/Medical Inventory/quarterly_report/offense_type.xlsx")
+operational_capacity <-  read_excel("C:/Users/yinin/Desktop/Medical Inventory/quarterly_report/operational_capacity.xlsx")
+staffratio <- read_excel("C:/Users/yinin/Desktop/Medical Inventory/quarterly_report/staff_ratio.xlsx")
+
+# remove totals
+off_class <- off_class %>% filter(Month != "Total")
+#offensetype <- offensetype %>% na.omit()
+#rename things
+#operational_capacity <- operational_capacity %>% rename(rated_cap_pct = "rated_cap_%")
+#offensetype <- offensetype %>% rename(rated_cap_pct = "Rated Capacity (Percent)")
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r class}
+
+filtered <- off_class %>%
+  group_by(Prison) %>% 
+  filter(Prison =="East Moline" |
+           Prison == "Jacksonville" |
+           Prison == "Menard" | 
+           Prison == "Logan" |
+           Prison == "Hill"|
+           Prison == "Stateville") %>%
+  ungroup()
+
+#By Class
+ggplot() + geom_point(aes(x=Month, y= class_4, group=Prison), 
+                     data = off_class,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Month, y=class_4, color=Prison), 
+                     data = filtered)
+
+ggplot() + geom_point(aes(x=Month, y= class_1, group=Prison), 
+                     data = off_class,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Month, y=class_1, color=Prison), 
+                     data = filtered)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r by capacity}
+operational_capacity <- operational_capacity %>% filter(Facility != "Menard R&C")
+staffratio <- staffratio %>% filter(Month != "Total")
+filtered <- staffratio %>%
+  group_by(Prison) %>% 
+  filter(Prison =="East Moline" |
+           Prison == "Jacksonville" |
+           Prison == "Menard" | 
+           Prison == "Hill" |
+           Prison == "Stateville") %>%
+  ungroup()
+
+ggplot() + geom_point(aes(x=Month, y= ratio_change, group=Prison), 
+                     data = staffratio,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Month, y= ratio_change, color=Prison), 
+                     data = filtered)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

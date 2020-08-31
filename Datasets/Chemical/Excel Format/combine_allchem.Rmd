@@ -1,0 +1,52 @@
+---
+title: "Chemical Overtime"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+remove(list=ls())
+library(readxl)
+library(tidyverse)
+library(writexl)
+
+files <- list.files(path = "C:/Users/yinin/Desktop/Medical Inventory/Chemical/Excel Format/Dated", pattern = "*.xlsx", full.names = T)
+tbl <- sapply(files, read_excel, simplify=FALSE) %>% 
+bind_rows(.id = "id")
+
+tbl <- tbl %>% na.omit()
+
+#rename columns
+tbl <- tbl %>% rename(hand_sanitizer = "...2")
+tbl <- tbl %>% rename(zep_rtu = "...3")
+tbl <- tbl %>% rename(bleach = "...4")
+tbl <- tbl %>% rename(industrial_cleaner = "...5")
+tbl <- tbl %>% rename(arc_cleaner = "...6")
+tbl <- tbl %>% rename(citral_cleaner = "...7")
+tbl <- tbl %>% rename(peroxide = "...8")
+tbl <- tbl %>% rename(foaming_soap = "...9")
+tbl <- tbl %>% rename(bacterial_soap = "...10")
+tbl <- tbl %>% rename(bar_soap = "...11")
+tbl <- tbl %>% rename(sanitizer_bottle = "...12")
+tbl <- tbl %>% rename(facility = "CHEMICAL MASTER INVENTORY")
+
+#replace id with Date
+#tbl$id <- gsub("C:/Users/yinin/Desktop/Medical Inventory/Chemical/Excel Format/Dated/", "", tbl)
+write_xlsx(tbl, "C:/Users/yinin/Desktop/Medical Inventory/Chemical/Excel Format/equipment.xlsx")
+
+```
+
+```{r cars}
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

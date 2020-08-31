@@ -1,0 +1,189 @@
+---
+title: "equipment_analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+remove(list=ls())
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+medical <- read_excel("equipment.xlsx")
+
+#combine sizes
+medical <- medical %>% mutate(gloves = gloves_s + gloves_m + gloves_l + gloves_xl)
+medical <- medical %>% mutate(shoes = shoe_reg + shoe_xl)
+
+#combine types / sizes
+medical <- medical %>% mutate(masks = surgical_masks + shield_masks + 
+                                n95_masks + offender_masks)
+
+medical <- medical %>% mutate(thermometer = thermometer_ear + thermometer_temporal...17 +
+                                thermometer_oral + thermometer_temporal...19)
+
+#Group by Prisons we're looking at
+filtered <- medical %>%
+  group_by(facility) %>% 
+  filter(facility =="East Moline" |
+           facility == "Jacksonville" |
+           facility == "Menard" | 
+           facility == "Logan" |
+           facility == "Hill"|
+           facility == "Stateville") %>%
+  ungroup()
+
+#Shoes and Gloves
+ggplot() + geom_point(aes(x=Date, y=test_covid, group=facility), 
+                     data = medical,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=test_covid, color=facility), 
+                     data = filtered)
+
+
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r filter outliers}
+
+#try without the big outlier
+medic_filter <- medical %>% filter(facility != "Decatur" & facility != "Graham" &
+                                     facility != "SWICC")
+
+
+ggplot() + geom_point(aes(x=Date, y=shoes, group=facility), 
+                     data = medic_filter,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=shoes, color=facility), 
+                     data = filtered)
+
+
+## COVID TESTS
+ggplot() + geom_point(aes(x=Date, y=test_covid, group=facility), 
+                     data = medic_filter,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=test_covid, color=facility), 
+                     data = filtered)
+
+##temperature
+ggplot() + geom_point(aes(x=Date, y=thermometer, group=facility), 
+                     data = medic_filter,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=thermometer, color=facility), 
+                     data = filtered_two)
+
+##Flu test
+ggplot() + geom_point(aes(x=Date, y=test_covid, group=facility), 
+                     data = medical,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=test_flu, color=facility), 
+                     data = filtered)
+
+##Masks
+ggplot() + geom_point(aes(x=Date, y=masks, group=facility), 
+                     data = medic_filter,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=masks, color=facility), 
+                     data = filtered_two)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r graphs included}
+---
+title: "equipment_analysis"
+output: html_document
+---
+```
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+remove(list=ls())
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+medical <- read_excel("equipment.xlsx")
+
+#combine sizes
+medical <- medical %>% mutate(gloves = gloves_s + gloves_m + gloves_l + gloves_xl)
+medical <- medical %>% mutate(shoes = shoe_reg + shoe_xl)
+
+#combine types / sizes
+medical <- medical %>% mutate(masks = surgical_masks + shield_masks + 
+                                n95_masks + offender_masks)
+
+medical <- medical %>% mutate(thermometer = thermometer_ear + thermometer_temporal...17 +
+                                thermometer_oral + thermometer_temporal...19)
+
+#Group by Prisons we're looking at
+filtered <- medical %>%
+  group_by(facility) %>% 
+  filter(facility =="East Moline" |
+           facility == "Jacksonville" |
+           facility == "Menard" | 
+           facility == "Logan" |
+           facility == "Hill"|
+           facility == "Stateville") %>%
+  ungroup()
+
+#Shoes and Gloves
+ggplot() + geom_point(aes(x=Date, y=test_covid, group=facility), 
+                     data = medical,
+                     color = alpha("grey", 0.7)) +
+  geom_point(aes(x=Date, y=test_covid, color=facility), 
+                     data = filtered)
+
+
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r final ver}
+
+#try without the big outlier
+medical_covid <- medical %>% filter(facility != "Graham" & facility != "SWICC" & facility != "Decatur")
+
+## COVID TESTS
+ggplot() + geom_point(aes(x=Date, y=test_covid, group=facility), 
+                     data = medical_covid, size = 1,
+                     color = alpha("grey", 0.5)) +
+  geom_point(aes(x=Date, y=test_covid, color=facility), 
+                     data = filtered, size = 1) + 
+  scale_color_brewer(palette = "Dark2") +
+  theme_minimal() + 
+  labs(title = "COVID Tests Available Across Prisons June 1 to August 20",
+       subtitle = "Decatur, Graham, and SWICC are omitted for scale",
+       caption = "Source: IDOC Medical Inventory",
+       x = "Timeline", y = "", color = "") +
+  theme(legend.position = "bottom", axis.title=element_blank())
+
+##Masks
+masks_covid <- medical %>% filter(facility != "Shawnee" & facility != "Stateville NRC" & facility != "Taylorville")
+
+ggplot() + geom_point(aes(x=Date, y=masks, group=facility), 
+                     data = masks_covid,
+                     color = alpha("grey", 0.5)) +
+  geom_point(aes(x=Date, y=masks, color=facility), 
+                     data = filtered) + 
+  scale_color_brewer(palette = "Dark2") +
+  theme_minimal() + 
+  labs(title = "Masks Available Across Prisons June 1 to August 20",
+       subtitle = "Shawnee, Stateville NRC, and Taylorville are omitted for Scale",
+       caption = "Source: IDOC Medical Inventory",
+       x = "Timeline", y = "", color = "") +
+  theme(legend.position = "bottom", axis.title=element_blank())
+```
+

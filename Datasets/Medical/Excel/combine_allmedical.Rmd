@@ -1,0 +1,70 @@
+---
+title: "Chemical Overtime"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+remove(list=ls())
+library(readxl)
+library(tidyverse)
+library(writexl)
+
+files <- list.files(path = "C:/Users/yinin/Desktop/Medical Inventory/Medical/Excel", pattern = "*.xlsx", full.names = T)
+tbl <- sapply(files, read_excel, simplify=FALSE) %>% 
+bind_rows(.id = "id")
+
+#Remove rows totals
+tbl <- tbl[!is.na(tbl$...1), ]
+tbl$...3 <- NULL
+tbl$...5 <- NULL
+tbl$...7 <- NULL
+tbl$...11 <- NULL
+tbl$...13<- NULL
+tbl$...9 <- NULL
+tbl$...15 <- NULL
+tbl$...17 <- NULL
+tbl$...19 <- NULL
+tbl$...21 <- NULL
+tbl$...23 <- NULL
+tbl$...25 <- NULL
+tbl$...27 <- NULL
+tbl$...29 <- NULL
+tbl$...31 <- NULL
+tbl$...33 <- NULL
+tbl$...35 <- NULL
+tbl <- tbl %>% subset(select=-c(26:44))
+
+#rename columns
+tbl <- tbl %>% rename(facility = "...1")
+tbl <- tbl %>% rename(gloves_s = "S")
+tbl <- tbl %>% rename(gloves_m = "M")
+tbl <- tbl %>% rename(gloves_l = "L")
+tbl <- tbl %>% rename(gloves_xl = "XL...8")
+tbl <- tbl %>% rename(shoe_reg = "REG")
+tbl <- tbl %>% rename(shoe_xl = "XL...12")
+tbl <- tbl %>% rename(thermometer_ear = "Ear...28")
+tbl <- tbl %>% rename(thermometer_oral = "Oral...30")
+tbl <- tbl %>% rename(cover_ear = "Ear...34")
+tbl <- tbl %>% rename(cover_oral = "Oral...32")
+
+#replace id with Date
+#tbl$id <- gsub("C:/Users/yinin/Desktop/Medical Inventory/Chemical/Excel Format/Dated/", "", tbl)
+write_xlsx(tbl, "C:/Users/yinin/Desktop/Medical Inventory/Medical/Excel/equipment.xlsx")
+
+```
+
+```{r cars}
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

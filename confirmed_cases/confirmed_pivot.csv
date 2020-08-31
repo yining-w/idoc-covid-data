@@ -1,0 +1,523 @@
+location,staff_confirmed,staff_recovered,prisoner_confirmed,prisoner_recovered,Day
+Big Muddy River,3,1,1,1,7
+Big Muddy River,3,1,1,1,11
+Big Muddy River,3,1,1,1,12
+Big Muddy River,3,1,1,1,13
+Big Muddy River,3,2,1,1,14
+Big Muddy River,3,2,1,1,15
+Big Muddy River,3,2,1,1,17
+Big Muddy River,3,2,1,1,18
+Big Muddy River,3,2,1,1,19
+Big Muddy River,3,3,1,1,20
+Big Muddy River,3,3,1,1,21
+Big Muddy River,3,3,1,1,24
+Big Muddy River,3,3,1,1,26
+Big Muddy River,3,3,1,1,27
+Big Muddy River,3,3,1,1,28
+Big Muddy River,3,3,1,1,30
+Centralia,3,0,0,0,7
+Centralia,3,0,0,0,11
+Centralia,3,0,0,0,12
+Centralia,3,2,0,0,13
+Centralia,3,3,0,0,14
+Centralia,4,3,0,0,15
+Centralia,4,3,0,0,17
+Centralia,4,3,0,0,18
+Centralia,4,3,0,0,19
+Centralia,5,3,0,0,20
+Centralia,6,3,0,0,21
+Centralia,6,4,0,0,24
+Centralia,7,4,0,0,26
+Centralia,8,4,0,0,27
+Centralia,9,5,0,0,28
+Centralia,10,6,0,0,30
+Crossroads ATC,1,1,3,3,7
+Crossroads ATC,1,1,3,3,11
+Crossroads ATC,1,1,3,3,12
+Crossroads ATC,1,1,3,3,13
+Crossroads ATC,1,1,3,3,14
+Crossroads ATC,1,1,3,3,15
+Crossroads ATC,1,1,3,3,17
+Crossroads ATC,1,1,3,3,18
+Crossroads ATC,1,1,3,3,19
+Crossroads ATC,1,1,3,3,20
+Crossroads ATC,1,1,3,3,21
+Crossroads ATC,1,1,3,3,24
+Crossroads ATC,1,1,3,3,26
+Crossroads ATC,1,1,3,3,27
+Crossroads ATC,1,1,3,3,28
+Crossroads ATC,1,1,3,3,30
+Danville,1,1,0,0,7
+Danville,1,1,0,0,11
+Danville,1,1,0,0,12
+Danville,1,1,0,0,13
+Danville,1,1,0,0,14
+Danville,1,1,0,0,15
+Danville,1,1,0,0,17
+Danville,1,1,0,0,18
+Danville,1,1,0,0,19
+Danville,1,1,0,0,20
+Danville,1,1,0,0,21
+Danville,1,1,0,0,24
+Danville,1,1,0,0,26
+Danville,1,1,0,0,27
+Danville,1,1,0,0,28
+Danville,3,1,0,0,30
+Decatur,2,1,0,0,7
+Decatur,2,1,0,0,11
+Decatur,2,1,0,0,12
+Decatur,2,1,0,0,13
+Decatur,2,1,0,0,14
+Decatur,3,2,0,0,15
+Decatur,3,2,0,0,17
+Decatur,3,2,0,0,18
+Decatur,3,2,0,0,19
+Decatur,3,2,0,0,20
+Decatur,3,2,0,0,21
+Decatur,3,3,0,0,24
+Decatur,3,3,0,0,26
+Decatur,3,3,0,0,27
+Decatur,3,3,0,0,28
+Decatur,3,3,0,0,30
+Dixon,5,3,0,0,7
+Dixon,5,3,0,0,11
+Dixon,5,4,0,0,12
+Dixon,5,4,0,0,13
+Dixon,6,4,0,0,14
+Dixon,6,4,0,0,15
+Dixon,6,4,0,0,17
+Dixon,6,4,0,0,18
+Dixon,7,4,0,0,19
+Dixon,7,4,0,0,20
+Dixon,8,4,0,0,21
+Dixon,8,7,0,0,24
+Dixon,9,7,0,0,26
+Dixon,10,7,0,0,27
+Dixon,10,7,0,0,28
+Dixon,13,7,3,0,30
+East Moline,7,6,72,71,7
+East Moline,7,6,93,71,11
+East Moline,7,6,93,71,12
+East Moline,7,6,93,71,13
+East Moline,7,6,93,71,14
+East Moline,7,6,93,71,15
+East Moline,7,6,93,71,17
+East Moline,7,6,93,71,18
+East Moline,7,6,98,72,19
+East Moline,7,6,98,72,20
+East Moline,7,6,101,72,21
+East Moline,7,7,103,73,24
+East Moline,7,7,115,73,26
+East Moline,7,7,117,73,27
+East Moline,7,7,117,73,28
+East Moline,8,7,150,91,30
+Elgin Treatment Center,5,5,0,0,7
+Elgin Treatment Center,5,5,0,0,11
+Elgin Treatment Center,5,5,0,0,12
+Elgin Treatment Center,5,5,0,0,13
+Elgin Treatment Center,5,5,0,0,14
+Elgin Treatment Center,5,5,0,0,15
+Elgin Treatment Center,5,5,0,0,17
+Elgin Treatment Center,5,5,0,0,18
+Elgin Treatment Center,5,5,0,0,19
+Elgin Treatment Center,5,5,0,0,20
+Elgin Treatment Center,5,5,0,0,21
+Elgin Treatment Center,5,5,0,0,24
+Elgin Treatment Center,5,5,0,0,26
+Elgin Treatment Center,5,5,0,0,27
+Elgin Treatment Center,5,5,0,0,28
+Elgin Treatment Center,5,5,0,0,30
+Fox Valley ATC,7,7,4,4,7
+Fox Valley ATC,7,7,4,4,11
+Fox Valley ATC,7,7,4,4,12
+Fox Valley ATC,7,7,4,4,13
+Fox Valley ATC,7,7,4,4,14
+Fox Valley ATC,7,7,4,4,15
+Fox Valley ATC,7,7,4,4,17
+Fox Valley ATC,7,7,4,4,18
+Fox Valley ATC,7,7,4,4,19
+Fox Valley ATC,7,7,4,4,20
+Fox Valley ATC,7,7,4,4,21
+Fox Valley ATC,7,7,4,4,24
+Fox Valley ATC,7,7,4,4,26
+Fox Valley ATC,7,7,4,4,27
+Fox Valley ATC,7,7,4,4,28
+Fox Valley ATC,7,7,4,4,30
+Graham,3,1,0,0,7
+Graham,4,1,1,0,11
+Graham,4,1,1,0,12
+Graham,4,1,1,0,13
+Graham,4,1,1,0,14
+Graham,4,1,2,0,15
+Graham,4,1,2,0,17
+Graham,4,1,2,0,18
+Graham,4,1,2,0,19
+Graham,5,1,2,0,20
+Graham,6,1,2,0,21
+Graham,9,1,3,0,24
+Graham,16,1,3,0,26
+Graham,21,2,3,0,27
+Graham,24,3,3,0,28
+Graham,26,6,3,2,30
+Hill,3,2,19,18,7
+Hill,3,2,19,18,11
+Hill,3,2,20,18,12
+Hill,3,2,20,18,13
+Hill,3,2,20,18,14
+Hill,3,3,20,19,15
+Hill,3,3,20,19,17
+Hill,3,3,20,19,18
+Hill,3,3,20,19,19
+Hill,3,3,20,19,20
+Hill,3,3,20,19,21
+Hill,3,3,20,20,24
+Hill,3,3,22,20,26
+Hill,4,3,22,20,27
+Hill,5,3,22,20,28
+Hill,6,3,22,20,30
+Illinois River,6,5,0,0,7
+Illinois River,6,5,0,0,11
+Illinois River,6,5,0,0,12
+Illinois River,6,5,0,0,13
+Illinois River,6,5,0,0,14
+Illinois River,6,5,0,0,15
+Illinois River,6,5,0,0,17
+Illinois River,6,5,0,0,18
+Illinois River,6,5,0,0,19
+Illinois River,6,5,0,0,20
+Illinois River,6,5,0,0,21
+Illinois River,7,5,0,0,24
+Illinois River,7,5,0,0,26
+Illinois River,7,5,0,0,27
+Illinois River,7,6,0,0,28
+Illinois River,7,6,0,0,30
+Jacksonville,5,1,0,0,7
+Jacksonville,10,1,18,0,11
+Jacksonville,12,1,24,0,12
+Jacksonville,13,2,40,0,13
+Jacksonville,14,2,51,1,14
+Jacksonville,15,3,68,1,15
+Jacksonville,17,3,81,1,17
+Jacksonville,17,3,81,1,18
+Jacksonville,17,8,95,1,19
+Jacksonville,19,9,95,1,20
+Jacksonville,20,9,101,1,21
+Jacksonville,21,11,110,12,24
+Jacksonville,21,13,120,33,26
+Jacksonville,23,14,125,40,27
+Jacksonville,24,15,126,44,28
+Jacksonville,26,19,127,63,30
+Joliet Treatment Center,27,23,0,0,7
+Joliet Treatment Center,28,22,0,0,11
+Joliet Treatment Center,28,22,0,0,12
+Joliet Treatment Center,28,22,0,0,13
+Joliet Treatment Center,28,23,0,0,14
+Joliet Treatment Center,28,24,0,0,15
+Joliet Treatment Center,28,24,0,0,17
+Joliet Treatment Center,28,24,0,0,18
+Joliet Treatment Center,28,25,0,0,19
+Joliet Treatment Center,29,25,0,0,20
+Joliet Treatment Center,29,25,0,0,21
+Joliet Treatment Center,29,25,0,0,24
+Joliet Treatment Center,29,25,0,0,26
+Joliet Treatment Center,29,26,0,0,27
+Joliet Treatment Center,29,26,0,0,28
+Joliet Treatment Center,29,26,0,0,30
+Kewanee LSRC,4,2,0,0,7
+Kewanee LSRC,5,3,0,0,11
+Kewanee LSRC,5,3,0,0,12
+Kewanee LSRC,5,3,0,0,13
+Kewanee LSRC,5,3,0,0,14
+Kewanee LSRC,6,3,0,0,15
+Kewanee LSRC,6,3,0,0,17
+Kewanee LSRC,6,3,0,0,18
+Kewanee LSRC,6,3,0,0,19
+Kewanee LSRC,6,3,0,0,20
+Kewanee LSRC,6,3,0,0,21
+Kewanee LSRC,6,5,0,0,24
+Kewanee LSRC,6,5,0,0,26
+Kewanee LSRC,6,5,0,0,27
+Kewanee LSRC,6,5,0,0,28
+Kewanee LSRC,6,5,0,0,30
+Lawrence,1,0,0,0,7
+Lawrence,1,0,2,0,11
+Lawrence,1,0,2,0,12
+Lawrence,1,0,2,0,13
+Lawrence,1,0,2,0,14
+Lawrence,1,0,2,0,15
+Lawrence,1,0,2,0,17
+Lawrence,1,0,2,0,18
+Lawrence,1,0,2,0,19
+Lawrence,1,0,2,0,20
+Lawrence,1,0,2,0,21
+Lawrence,1,0,2,0,24
+Lawrence,1,0,2,0,26
+Lawrence,2,0,2,0,27
+Lawrence,2,0,2,0,28
+Lawrence,4,1,2,0,30
+Lincoln,5,1,0,0,7
+Lincoln,10,1,7,0,11
+Lincoln,10,1,13,0,12
+Lincoln,12,4,13,0,13
+Lincoln,12,6,13,0,14
+Lincoln,12,6,15,0,15
+Lincoln,12,7,16,0,17
+Lincoln,12,7,16,0,18
+Lincoln,12,7,19,0,19
+Lincoln,13,8,20,0,20
+Lincoln,13,9,21,0,21
+Lincoln,13,10,31,0,24
+Lincoln,13,10,38,0,26
+Lincoln,13,10,39,0,27
+Lincoln,13,11,41,0,28
+Lincoln,14,11,44,2,30
+Logan,12,10,18,1,7
+Logan,15,10,63,2,11
+Logan,15,10,63,2,12
+Logan,15,10,65,5,13
+Logan,15,10,65,5,14
+Logan,16,10,72,11,15
+Logan,16,10,72,12,17
+Logan,16,10,72,12,18
+Logan,16,10,72,12,19
+Logan,16,11,72,12,20
+Logan,16,13,72,25,21
+Logan,16,14,73,63,24
+Logan,16,15,78,63,26
+Logan,16,15,78,65,27
+Logan,16,15,79,64,28
+Logan,16,15,79,72,30
+Menard,20,11,0,0,7
+Menard,21,12,0,0,11
+Menard,23,17,0,0,12
+Menard,23,17,1,0,13
+Menard,28,17,1,0,14
+Menard,30,19,10,1,15
+Menard,31,19,31,1,17
+Menard,31,19,31,1,18
+Menard,34,21,32,1,19
+Menard,37,21,40,2,20
+Menard,43,23,43,2,21
+Menard,51,25,57,2,24
+Menard,55,33,62,2,26
+Menard,58,34,76,2,27
+Menard,58,34,80,2,28
+Menard,63,43,94,19,30
+Murphysboro,1,1,0,0,7
+Murphysboro,1,1,0,0,11
+Murphysboro,1,1,0,0,12
+Murphysboro,1,1,0,0,13
+Murphysboro,1,1,0,0,14
+Murphysboro,1,1,0,0,15
+Murphysboro,1,1,0,0,17
+Murphysboro,1,1,0,0,18
+Murphysboro,1,1,0,0,19
+Murphysboro,1,1,0,0,20
+Murphysboro,1,1,0,0,21
+Murphysboro,1,1,0,0,24
+Murphysboro,1,1,0,0,26
+Murphysboro,1,1,0,0,27
+Murphysboro,1,1,0,0,28
+Murphysboro,1,1,0,0,30
+North Lawndale ATC,4,4,5,5,7
+North Lawndale ATC,4,4,5,5,11
+North Lawndale ATC,4,4,5,5,12
+North Lawndale ATC,4,4,5,5,13
+North Lawndale ATC,4,4,5,5,14
+North Lawndale ATC,4,4,5,5,15
+North Lawndale ATC,4,4,5,5,17
+North Lawndale ATC,4,4,5,5,18
+North Lawndale ATC,4,4,5,5,19
+North Lawndale ATC,4,4,5,5,20
+North Lawndale ATC,4,4,5,5,21
+North Lawndale ATC,4,4,5,5,24
+North Lawndale ATC,4,4,5,5,26
+North Lawndale ATC,4,4,5,5,27
+North Lawndale ATC,4,4,5,5,28
+North Lawndale ATC,4,4,5,5,30
+Peoria ATC,5,5,8,8,7
+Peoria ATC,5,5,8,8,11
+Peoria ATC,5,5,8,8,12
+Peoria ATC,5,5,8,8,13
+Peoria ATC,5,5,8,8,14
+Peoria ATC,5,5,8,8,15
+Peoria ATC,5,5,8,8,17
+Peoria ATC,5,5,8,8,18
+Peoria ATC,5,5,8,8,19
+Peoria ATC,6,5,8,8,20
+Peoria ATC,6,5,8,8,21
+Peoria ATC,6,5,8,8,24
+Peoria ATC,6,5,8,8,26
+Peoria ATC,6,5,8,8,27
+Peoria ATC,6,5,8,8,28
+Peoria ATC,6,5,8,8,30
+Pinckneyville,4,5,0,0,7
+Pinckneyville,5,5,0,0,11
+Pinckneyville,5,5,0,0,12
+Pinckneyville,5,5,0,0,13
+Pinckneyville,5,5,0,0,14
+Pinckneyville,5,5,0,0,15
+Pinckneyville,5,5,0,0,17
+Pinckneyville,5,5,0,0,18
+Pinckneyville,5,5,0,0,19
+Pinckneyville,6,5,0,0,20
+Pinckneyville,7,5,0,0,21
+Pinckneyville,7,5,0,0,24
+Pinckneyville,8,5,0,0,26
+Pinckneyville,8,5,1,0,27
+Pinckneyville,9,6,1,0,28
+Pinckneyville,9,7,1,0,30
+Pontiac,10,8,6,6,7
+Pontiac,11,8,6,6,11
+Pontiac,11,8,6,6,12
+Pontiac,11,8,6,6,13
+Pontiac,11,10,6,6,14
+Pontiac,11,10,6,6,15
+Pontiac,11,10,6,6,17
+Pontiac,11,10,6,6,18
+Pontiac,11,10,6,6,19
+Pontiac,11,10,6,6,20
+Pontiac,11,10,6,6,21
+Pontiac,11,10,6,6,24
+Pontiac,11,10,6,6,26
+Pontiac,11,11,6,6,27
+Pontiac,11,11,6,6,28
+Pontiac,11,11,6,6,30
+Robinson,3,0,0,0,7
+Robinson,3,0,0,0,11
+Robinson,3,0,0,0,12
+Robinson,3,0,0,0,13
+Robinson,3,0,0,0,14
+Robinson,3,0,0,0,15
+Robinson,3,0,0,0,17
+Robinson,3,0,0,0,18
+Robinson,3,0,0,0,19
+Robinson,3,0,0,0,20
+Robinson,3,0,0,0,21
+Robinson,3,0,0,0,24
+Robinson,3,0,0,0,26
+Robinson,3,3,0,0,27
+Robinson,3,3,0,0,28
+Robinson,3,3,0,0,30
+Shawnee,1,0,0,0,26
+Shawnee,2,0,0,0,27
+Shawnee,4,0,1,0,28
+Shawnee,8,0,3,0,30
+Sheridan,8,8,20,18,7
+Sheridan,10,8,20,20,11
+Sheridan,10,8,20,20,12
+Sheridan,10,8,20,20,13
+Sheridan,12,8,20,20,14
+Sheridan,14,8,20,20,15
+Sheridan,14,8,20,20,17
+Sheridan,14,8,20,20,18
+Sheridan,14,8,20,20,19
+Sheridan,14,10,20,20,20
+Sheridan,14,10,20,20,21
+Sheridan,15,11,20,20,24
+Sheridan,15,11,20,20,26
+Sheridan,15,12,20,20,27
+Sheridan,15,12,20,20,28
+Sheridan,15,13,20,20,30
+Southwestern IL,13,6,0,0,7
+Southwestern IL,14,6,0,0,11
+Southwestern IL,15,10,0,0,12
+Southwestern IL,15,10,0,0,13
+Southwestern IL,15,11,0,0,14
+Southwestern IL,15,12,0,0,15
+Southwestern IL,15,12,0,0,17
+Southwestern IL,15,12,0,0,18
+Southwestern IL,15,12,0,0,19
+Southwestern IL,15,12,0,0,20
+Southwestern IL,15,12,0,0,21
+Southwestern IL,15,13,0,0,24
+Southwestern IL,15,15,0,0,26
+Southwestern IL,15,15,0,0,27
+Southwestern IL,15,15,0,0,28
+Southwestern IL,15,15,0,0,30
+Stateville,81,78,252,207,7
+Stateville,82,78,259,205,11
+Stateville,83,78,262,212,12
+Stateville,84,78,262,212,13
+Stateville,91,78,261,212,14
+Stateville,98,80,261,212,15
+Stateville,98,80,260,211,17
+Stateville,98,80,260,210,18
+Stateville,103,80,263,240,19
+Stateville,104,80,263,240,20
+Stateville,106,81,265,247,21
+Stateville,111,81,268,248,24
+Stateville,113,82,269,248,26
+Stateville,113,82,272,248,27
+Stateville,112,82,272,253,28
+Stateville,114,88,268,254,30
+Stateville NRC,30,36,2,2,7
+Stateville NRC,30,36,4,2,11
+Stateville NRC,40,36,4,2,12
+Stateville NRC,41,36,4,2,13
+Stateville NRC,42,36,7,2,14
+Stateville NRC,43,37,9,2,15
+Stateville NRC,43,37,9,2,17
+Stateville NRC,43,37,9,2,18
+Stateville NRC,43,37,9,2,19
+Stateville NRC,44,37,9,2,20
+Stateville NRC,44,37,9,2,21
+Stateville NRC,44,37,10,2,24
+Stateville NRC,44,37,12,2,26
+Stateville NRC,44,39,15,2,27
+Stateville NRC,46,39,30,3,28
+Stateville NRC,45,38,52,7,30
+Taylorville,3,1,1,1,7
+Taylorville,3,1,1,1,11
+Taylorville,3,1,1,1,12
+Taylorville,3,1,1,1,13
+Taylorville,3,1,1,1,14
+Taylorville,3,2,1,1,15
+Taylorville,3,2,1,1,17
+Taylorville,3,2,1,1,18
+Taylorville,3,3,1,1,19
+Taylorville,3,3,1,1,20
+Taylorville,3,3,1,1,21
+Taylorville,3,3,1,1,24
+Taylorville,4,3,2,1,26
+Taylorville,4,3,2,1,27
+Taylorville,4,3,2,1,28
+Taylorville,5,3,2,1,30
+Vandalia,0,0,2,0,20
+Vandalia,1,0,2,0,21
+Vandalia,1,0,2,0,24
+Vandalia,3,0,2,0,26
+Vandalia,3,0,2,0,27
+Vandalia,4,0,2,0,28
+Vandalia,5,1,2,0,30
+Vienna,3,3,0,0,7
+Vienna,3,3,0,0,11
+Vienna,3,3,0,0,12
+Vienna,3,3,0,0,14
+Vienna,3,3,0,0,15
+Vienna,3,3,0,0,17
+Vienna,3,3,0,0,18
+Vienna,3,3,0,0,19
+Vienna,3,3,0,0,20
+Vienna,3,3,0,0,21
+Vienna,4,3,0,0,24
+Vienna,4,3,0,0,26
+Vienna,4,3,0,0,27
+Vienna,4,3,0,0,28
+Vienna,4,3,0,0,30
+Western IL,5,4,0,0,7
+Western IL,5,4,2,0,11
+Western IL,5,4,2,0,12
+Western IL,5,4,2,0,13
+Western IL,5,4,2,0,14
+Western IL,5,4,2,0,15
+Western IL,5,4,2,0,17
+Western IL,5,4,2,0,18
+Western IL,5,4,2,0,19
+Western IL,5,4,2,0,20
+Western IL,5,4,2,0,21
+Western IL,6,4,2,2,24
+Western IL,6,5,2,2,26
+Western IL,6,5,2,2,27
+Western IL,6,5,2,2,28
+Western IL,6,6,2,2,30
